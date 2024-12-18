@@ -1,5 +1,3 @@
-"""An Azure RM Python Pulumi program"""
-
 import pulumi
 from pulumi_azure_native import storage
 from pulumi_azure_native import resources
@@ -11,12 +9,16 @@ tags = {
   "ValueStream": "BEES Platform - CloudDevOps",
   "teamName": "Cloud Computing and Network"
 }
+
+pulumi_config = pulumi.Config()
+storage_account_name = pulumi_config.require("name")
+
 # Create an Azure Resource Group
 resource_group = resources.ResourceGroup("pulumipoc", tags=tags)
 
 # Create an Azure resource (Storage Account)
 account = storage.StorageAccount(
-    "pulumipoc",
+    name=storage_account_name,
     resource_group_name=resource_group.name,
     sku={
         "name": storage.SkuName.STANDARD_LRS,

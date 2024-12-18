@@ -1,0 +1,11 @@
+name: pulumi-program-az-storage-account
+runtime:
+  name: python
+  options:
+    toolchain: pip
+    virtualenv: venv
+description: A simple Pulumi Program to run with K8s Operator
+config:
+  pulumi:tags:
+    value:
+      pulumi:template: azure-python

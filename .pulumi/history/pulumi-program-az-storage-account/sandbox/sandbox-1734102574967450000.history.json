@@ -1,0 +1,36 @@
+{
+    "kind": "update",
+    "startTime": 1734102536,
+    "message": "Merge branch 'master' of ssh.dev.azure.com:v3/ab-inbev/GHQ_B2B_Delta/platform-engineering-tests",
+    "environment": {
+        "exec.kind": "cli",
+        "git.author": "Rodrigo Brasil",
+        "git.author.email": "rodrigo.brasil@ab-inbev.com",
+        "git.committer": "Rodrigo Brasil",
+        "git.committer.email": "rodrigo.brasil@ab-inbev.com",
+        "git.dirty": "true",
+        "git.head": "2c81bda6b8b53644d71de543809ff4233e4215a2",
+        "git.headName": "refs/heads/master",
+        "pulumi.arch": "arm64",
+        "pulumi.os": "darwin",
+        "pulumi.version": "v3.129.0",
+        "updatePlan": "false",
+        "vcs.kind": "dev.azure.com",
+        "vcs.owner": "ab-inbev",
+        "vcs.repo": "GHQ_B2B_Delta/_git/platform-engineering-tests",
+        "vcs.root": "pulumi/kubernetes-operator/pulumi-program-az-storage-account"
+    },
+    "config": {
+        "azure-native:location": "WestUS2",
+        "pulumi:tags": {
+            "pulumi:template": "azure-python"
+        }
+    },
+    "version": 0,
+    "result": "succeeded",
+    "endTime": 1734102574,
+    "resourceChanges": {
+        "create": 2,
+        "same": 1
+    }
+}

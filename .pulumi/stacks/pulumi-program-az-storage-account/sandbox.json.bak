@@ -1,0 +1,194 @@
+{
+    "version": 3,
+    "checkpoint": {
+        "stack": "organization/pulumi-program-az-storage-account/sandbox",
+        "latest": {
+            "manifest": {
+                "time": "2024-12-13T12:09:33.685195-03:00",
+                "magic": "754c2596e98a48b601c099e42087c3a8042e7089feb1db31fe3368617a6dfdcc",
+                "version": "v3.129.0"
+            },
+            "secrets_providers": {
+                "type": "passphrase",
+                "state": {
+                    "salt": "v1:49iPVuSLqu0=:v1:a+igM7fzXFRtNi55:zX0JBm/IaeAWeuVXiBLynBQB+u5ovg=="
+                }
+            },
+            "resources": [
+                {
+                    "urn": "urn:pulumi:sandbox::pulumi-program-az-storage-account::pulumi:pulumi:Stack::pulumi-program-az-storage-account-sandbox",
+                    "custom": false,
+                    "type": "pulumi:pulumi:Stack",
+                    "created": "2024-12-13T14:34:50.297303Z",
+                    "modified": "2024-12-13T14:34:50.297303Z",
+                    "sourcePosition": "project:///venv/lib/python3.13/site-packages/pulumi/runtime/stack.py#142"
+                },
+                {
+                    "urn": "urn:pulumi:sandbox::pulumi-program-az-storage-account::pulumi:providers:azure-native::default_2_76_0",
+                    "custom": true,
+                    "id": "3bb61afe-8fb8-48f1-8c1e-15d841c63ef0",
+                    "type": "pulumi:providers:azure-native",
+                    "inputs": {
+                        "__internal": {},
+                        "location": "WestUS2",
+                        "version": "2.76.0"
+                    },
+                    "outputs": {
+                        "location": "WestUS2",
+                        "version": "2.76.0"
+                    },
+                    "created": "2024-12-13T14:34:50.75236Z",
+                    "modified": "2024-12-13T14:34:50.75236Z"
+                },
+                {
+                    "urn": "urn:pulumi:sandbox::pulumi-program-az-storage-account::azure-native:resources:ResourceGroup::pulumipoc",
+                    "custom": true,
+                    "id": "/subscriptions/17869085-b3d1-437f-9084-93ffb4bcaea3/resourceGroups/pulumipoc165c8889",
+                    "type": "azure-native:resources:ResourceGroup",
+                    "inputs": {
+                        "__createBeforeDelete": true,
+                        "location": "WestUS2",
+                        "resourceGroupName": "pulumipoc165c8889",
+                        "tags": {
+                            "BusinessStructure": "BEES Platform - CloudDevOps",
+                            "Creator": "Brasil, Rodrigo",
+                            "ValueStream": "BEES Platform - CloudDevOps",
+                            "teamName": "Cloud Computing and Network"
+                        }
+                    },
+                    "outputs": {
+                        "__inputs": {
+                            "4dabf18193072939515e22adb298388d": "1b47061264138c4ac30d75fd1eb44270",
+                            "ciphertext": "v1:J4bE5J03Fts8XpYc:3Hvn+2qUZ9CyiQSc3UbMnO7gJYFM8D1C5T7DPwkNRrq6hJSWqy2PJahTm7NT702Z+nC3+oYlOFC//oc/ykoc2fIx71DaNuLOp13VkuJThfLAmVTHiesavXZ6f+HuTlWAo0Sf0vtzTxLC09Q70cSfauv296DdnyS//B8eXl+Oe1I+mR/nJNRjVe1GuRXJ6CTuqMNl0YiOVs5O3QpUAUdL1LGvS/xoNRRiPTWpk7pXAJafLWegWmhe9G+xWKQ8ShGi9Y/wyOXK5uMafUZgREMo7MDsiQpv0r909RLtmuttUhPl8l772PGkuBEMouP6ohq2NULHT91AffJQnae1mXkeOer6seEQDEO8O4pbVjABaChKxyRDEcY="
+                        },
+                        "id": "/subscriptions/17869085-b3d1-437f-9084-93ffb4bcaea3/resourceGroups/pulumipoc165c8889",
+                        "location": "westus2",
+                        "name": "pulumipoc165c8889",
+                        "properties": {
+                            "provisioningState": "Succeeded"
+                        },
+                        "tags": {
+                            "BusinessStructure": "BEES Platform - CloudDevOps",
+                            "CreatedOnDate": "2024-12-13T15:09:01.2943326Z",
+                            "Creator": "Brasil, Rodrigo",
+                            "ValueStream": "BEES Platform - CloudDevOps",
+                            "teamName": "Cloud Computing and Network"
+                        },
+                        "type": "Microsoft.Resources/resourceGroups"
+                    },
+                    "parent": "urn:pulumi:sandbox::pulumi-program-az-storage-account::pulumi:pulumi:Stack::pulumi-program-az-storage-account-sandbox",
+                    "provider": "urn:pulumi:sandbox::pulumi-program-az-storage-account::pulumi:providers:azure-native::default_2_76_0::3bb61afe-8fb8-48f1-8c1e-15d841c63ef0",
+                    "propertyDependencies": {
+                        "tags": []
+                    },
+                    "created": "2024-12-13T15:09:05.612395Z",
+                    "modified": "2024-12-13T15:09:05.612395Z",
+                    "sourcePosition": "project:///venv/lib/python3.13/site-packages/pulumi_azure_native/resources/resource_group.py#137"
+                },
+                {
+                    "urn": "urn:pulumi:sandbox::pulumi-program-az-storage-account::azure-native:storage:StorageAccount::pulumipoc",
+                    "custom": true,
+                    "id": "/subscriptions/17869085-b3d1-437f-9084-93ffb4bcaea3/resourceGroups/pulumipoc165c8889/providers/Microsoft.Storage/storageAccounts/pulumipoc159e4846",
+                    "type": "azure-native:storage:StorageAccount",
+                    "inputs": {
+                        "__createBeforeDelete": true,
+                        "accountName": "pulumipoc159e4846",
+                        "kind": "StorageV2",
+                        "location": "WestUS2",
+                        "resourceGroupName": "pulumipoc165c8889",
+                        "sku": {
+                            "name": "Standard_LRS"
+                        },
+                        "tags": {
+                            "BusinessStructure": "BEES Platform - CloudDevOps",
+                            "Creator": "Brasil, Rodrigo",
+                            "ValueStream": "BEES Platform - CloudDevOps",
+                            "teamName": "Cloud Computing and Network"
+                        }
+                    },
+                    "outputs": {
+                        "__inputs": {
+                            "4dabf18193072939515e22adb298388d": "1b47061264138c4ac30d75fd1eb44270",
+                            "ciphertext": "v1:gkx/OCtCogJrhMLi:C1oybEKV2WUc1OWuoe8HA6B+UpTedv2LnLhityuud8s3ERfuMsdMsJy2UpIcb0eS+G6R0YHoyl9TU29hGJuyPRYUrqciwWjnNvbKOz/+5STuGaIJDq3a80HPhUMo5dx3B4ivxeoc4njh+JQEISN15RwTKtA+cS8/lzHYpvn2OgXVr0DYXNIIpLhnbcvdrthr45yiOtCZ/TJonowXGtw6P50pbKBPKt6QmsVQnkMIaikreo7PzQHbbi+SIn09c0CY2GffaCEXrwXND0HlGWLkWJ3/7E+nLD2h3VObr5z4Bj8FxlqU/SE/3qBZhFdBe4Hz4z94fPgpkjM3JEBU9E6ClTdivntTi1oRe7O3XB73ecYnpCIvEe9rhdkA/SgCiz74NTnUHObTwRrjqAuz9DH5v+7yhfYGxOKRGiQzhyKs3LJ0E/tLqtMJhLoGVXkRtyfu5+S3Ib3jlronvG4pnTM94JUTAMSOj926WQ=="
+                        },
+                        "accessTier": "Hot",
+                        "allowBlobPublicAccess": false,
+                        "allowCrossTenantReplication": false,
+                        "creationTime": "2024-12-13T15:09:11.2943485Z",
+                        "enableHttpsTrafficOnly": true,
+                        "encryption": {
+                            "keySource": "Microsoft.Storage",
+                            "services": {
+                                "blob": {
+                                    "enabled": true,
+                                    "keyType": "Account",
+                                    "lastEnabledTime": "2024-12-13T15:09:11.8256452Z"
+                                },
+                                "file": {
+                                    "enabled": true,
+                                    "keyType": "Account",
+                                    "lastEnabledTime": "2024-12-13T15:09:11.8256452Z"
+                                }
+                            }
+                        },
+                        "id": "/subscriptions/17869085-b3d1-437f-9084-93ffb4bcaea3/resourceGroups/pulumipoc165c8889/providers/Microsoft.Storage/storageAccounts/pulumipoc159e4846",
+                        "keyCreationTime": {
+                            "key1": "2024-12-13T15:09:11.4349400Z",
+                            "key2": "2024-12-13T15:09:11.4349400Z"
+                        },
+                        "kind": "StorageV2",
+                        "location": "westus2",
+                        "minimumTlsVersion": "TLS1_0",
+                        "name": "pulumipoc159e4846",
+                        "networkRuleSet": {
+                            "bypass": "AzureServices",
+                            "defaultAction": "Allow",
+                            "ipRules": [],
+                            "virtualNetworkRules": []
+                        },
+                        "primaryEndpoints": {
+                            "blob": "https://pulumipoc159e4846.blob.core.windows.net/",
+                            "dfs": "https://pulumipoc159e4846.dfs.core.windows.net/",
+                            "file": "https://pulumipoc159e4846.file.core.windows.net/",
+                            "queue": "https://pulumipoc159e4846.queue.core.windows.net/",
+                            "table": "https://pulumipoc159e4846.table.core.windows.net/",
+                            "web": "https://pulumipoc159e4846.z5.web.core.windows.net/"
+                        },
+                        "primaryLocation": "westus2",
+                        "privateEndpointConnections": [],
+                        "provisioningState": "Succeeded",
+                        "sku": {
+                            "name": "Standard_LRS",
+                            "tier": "Standard"
+                        },
+                        "statusOfPrimary": "available",
+                        "tags": {
+                            "BusinessStructure": "BEES Platform - CloudDevOps",
+                            "CreatedOnDate": "2024-12-13T15:09:08.0614071Z",
+                            "Creator": "Brasil, Rodrigo",
+                            "ValueStream": "BEES Platform - CloudDevOps",
+                            "teamName": "Cloud Computing and Network"
+                        },
+                        "type": "Microsoft.Storage/storageAccounts"
+                    },
+                    "parent": "urn:pulumi:sandbox::pulumi-program-az-storage-account::pulumi:pulumi:Stack::pulumi-program-az-storage-account-sandbox",
+                    "dependencies": [
+                        "urn:pulumi:sandbox::pulumi-program-az-storage-account::azure-native:resources:ResourceGroup::pulumipoc"
+                    ],
+                    "provider": "urn:pulumi:sandbox::pulumi-program-az-storage-account::pulumi:providers:azure-native::default_2_76_0::3bb61afe-8fb8-48f1-8c1e-15d841c63ef0",
+                    "propertyDependencies": {
+                        "kind": [],
+                        "resourceGroupName": [
+                            "urn:pulumi:sandbox::pulumi-program-az-storage-account::azure-native:resources:ResourceGroup::pulumipoc"
+                        ],
+                        "sku": [],
+                        "tags": []
+                    },
+                    "created": "2024-12-13T15:09:33.684991Z",
+                    "modified": "2024-12-13T15:09:33.684991Z",
+                    "sourcePosition": "project:///venv/lib/python3.13/site-packages/pulumi_azure_native/storage/storage_account.py#622"
+                }
+            ]
+        }
+    }
+}

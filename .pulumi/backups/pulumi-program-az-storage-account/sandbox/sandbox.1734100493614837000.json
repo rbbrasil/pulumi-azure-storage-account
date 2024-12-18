@@ -1,0 +1,46 @@
+{
+    "version": 3,
+    "checkpoint": {
+        "stack": "organization/pulumi-program-az-storage-account/sandbox",
+        "latest": {
+            "manifest": {
+                "time": "2024-12-13T11:34:53.606088-03:00",
+                "magic": "754c2596e98a48b601c099e42087c3a8042e7089feb1db31fe3368617a6dfdcc",
+                "version": "v3.129.0"
+            },
+            "secrets_providers": {
+                "type": "passphrase",
+                "state": {
+                    "salt": "v1:49iPVuSLqu0=:v1:a+igM7fzXFRtNi55:zX0JBm/IaeAWeuVXiBLynBQB+u5ovg=="
+                }
+            },
+            "resources": [
+                {
+                    "urn": "urn:pulumi:sandbox::pulumi-program-az-storage-account::pulumi:pulumi:Stack::pulumi-program-az-storage-account-sandbox",
+                    "custom": false,
+                    "type": "pulumi:pulumi:Stack",
+                    "created": "2024-12-13T14:34:50.297303Z",
+                    "modified": "2024-12-13T14:34:50.297303Z",
+                    "sourcePosition": "project:///venv/lib/python3.13/site-packages/pulumi/runtime/stack.py#142"
+                },
+                {
+                    "urn": "urn:pulumi:sandbox::pulumi-program-az-storage-account::pulumi:providers:azure-native::default_2_76_0",
+                    "custom": true,
+                    "id": "3bb61afe-8fb8-48f1-8c1e-15d841c63ef0",
+                    "type": "pulumi:providers:azure-native",
+                    "inputs": {
+                        "__internal": {},
+                        "location": "WestUS2",
+                        "version": "2.76.0"
+                    },
+                    "outputs": {
+                        "location": "WestUS2",
+                        "version": "2.76.0"
+                    },
+                    "created": "2024-12-13T14:34:50.75236Z",
+                    "modified": "2024-12-13T14:34:50.75236Z"
+                }
+            ]
+        }
+    }
+}

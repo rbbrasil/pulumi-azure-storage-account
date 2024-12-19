@@ -1,4 +1,4 @@
-name: pulumi-program-az-storage-account
+name: az-storage-account
 runtime:
   name: python
   options:

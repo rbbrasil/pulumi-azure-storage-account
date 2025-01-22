@@ -4,7 +4,7 @@ from pulumi_azure_native import storage
 # Tagging
 tags = {
   "BusinessStructure": "BEES Platform - CloudDevOps",
-  "Creator": "Brasil, Rodrigo",
+  "Creator": "Brasil, Rodrigo B",
   "ValueStream": "BEES Platform - CloudDevOps",
   "teamName": "Platform Engineering"
 }

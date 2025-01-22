@@ -6,7 +6,7 @@ tags = {
   "BusinessStructure": "BEES Platform - CloudDevOps",
   "Creator": "Brasil, Rodrigo",
   "ValueStream": "BEES Platform - CloudDevOps",
-  "teamName": "Cloud Computing and Network"
+  "teamName": "Platform Engineering"
 }
 
 pulumi_config = pulumi.Config()
@@ -16,7 +16,7 @@ storage_account_name = pulumi_config.require("name")
 #resource_group = resources.ResourceGroup("pulumipoc", tags=tags)
 
 # Use existing Resource Group
-resource_group_name = "pulumipoc9861af63"
+resource_group_name = "pulumipoc165c8889"
 
 # Create an Azure resource (Storage Account)
 account = storage.StorageAccount(

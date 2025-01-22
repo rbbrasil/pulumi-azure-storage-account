@@ -1,6 +1,5 @@
 import pulumi
 from pulumi_azure_native import storage
-from pulumi_azure_native import resources
 
 # Tagging
 tags = {
@@ -14,12 +13,15 @@ pulumi_config = pulumi.Config()
 storage_account_name = pulumi_config.require("name")
 
 # Create an Azure Resource Group
-resource_group = resources.ResourceGroup("pulumipoc", tags=tags)
+#resource_group = resources.ResourceGroup("pulumipoc", tags=tags)
+
+# Use existing Resource Group
+resource_group_name = "pulumipoc9861af63"
 
 # Create an Azure resource (Storage Account)
 account = storage.StorageAccount(
-    name=storage_account_name,
-    resource_group_name=resource_group.name,
+    resource_name=storage_account_name,
+    resource_group_name=resource_group_name,
     sku={
         "name": storage.SkuName.STANDARD_LRS,
     },
@@ -27,15 +29,5 @@ account = storage.StorageAccount(
     tags=tags,
 )
 
-# Export the primary key of the Storage Account
-primary_key = (
-    pulumi.Output.all(resource_group.name, account.name)
-    .apply(
-        lambda args: storage.list_storage_account_keys(
-            resource_group_name=args[0], account_name=args[1]
-        )
-    )
-    .apply(lambda accountKeys: accountKeys.keys[0].value)
-)
-
-pulumi.export("primary_storage_key", primary_key)
+# Export the primary endpoint URL of the storage account
+pulumi.export("primary_storage_endpoint", account.primary_endpoints.blob)
